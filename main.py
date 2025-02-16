@@ -59,7 +59,7 @@ def draw_point(image, landmark):
 
 
 while True:
-    _, img = cam.capture_array()
+    img = cam.capture_array()
     img = cv2.flip(img, 1)
 
     results = pose.process(img)
